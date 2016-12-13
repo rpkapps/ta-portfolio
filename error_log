@@ -1,0 +1,10 @@
+[12-Dec-2016 21:34:55 America/Denver] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) ' in /home1/aurumpho/public_html/timantonov/vendor-php/php-mailer/class.phpmailer.php:1023
+Stack trace:
+#0 /home1/aurumpho/public_html/timantonov/mail.php(18): PHPMailer->setFrom('', '')
+#1 {main}
+  thrown in /home1/aurumpho/public_html/timantonov/vendor-php/php-mailer/class.phpmailer.php on line 1023
+[12-Dec-2016 21:35:15 America/Denver] PHP Fatal error:  Uncaught exception 'phpmailerException' with message 'Invalid address:  (setFrom) ' in /home1/aurumpho/public_html/timantonov/vendor-php/php-mailer/class.phpmailer.php:1023
+Stack trace:
+#0 /home1/aurumpho/public_html/timantonov/mail.php(18): PHPMailer->setFrom('', '')
+#1 {main}
+  thrown in /home1/aurumpho/public_html/timantonov/vendor-php/php-mailer/class.phpmailer.php on line 1023
