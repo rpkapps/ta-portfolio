@@ -37,12 +37,12 @@
      * NAVIGATION
      *==========================*/
     function initNav() {
-        var $navbarContainer = $('#main-navbar-container');
+        var $navbarContainer = $('#main-navbar-container'),
+            $collapsablePortion = $('#main-nav');
 
         $navbar.affix({
             offset: {
                 top: $marquee.outerHeight(true),
-                bottom: $footer.outerHeight(true)
             }
         });
 
@@ -60,11 +60,17 @@
         $navbar.on('affix.bs.affix', function() {
             $navbarContainer.addClass('child-affix');
             $navbarContainer.removeClass('child-affix-top');
+            $collapsablePortion.collapse('hide');
         });
 
         $navbar.on('affix-top.bs.affix', function() {
             $navbarContainer.addClass('child-affix-top');
             $navbarContainer.removeClass('child-affix');
+            $collapsablePortion.css('transition', 'none');
+            $collapsablePortion.collapse('hide');
+            setTimeout(function() {
+                $collapsablePortion.css('transition', '');
+            }, 10);
         });
 
         $body.scrollspy({
@@ -75,7 +81,6 @@
         nav.resize = function() {
             // update navbar offset
             $navbar.data('bs.affix').options.offset.top = $marquee.outerHeight(true);
-            $navbar.data('bs.affix').options.offset.bottom = $footer.outerHeight(true);
             $body.data('bs.scrollspy').options.offset = $navbar.outerHeight(true);
         };
 

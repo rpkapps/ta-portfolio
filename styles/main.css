@@ -68,7 +68,10 @@ h4 {
     left: 50%;
     margin-left: -182px;
     top: -70px;
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
     transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
 }
 
 h3 {
@@ -137,14 +140,16 @@ figure img {
 
 .btn {
     font-family: lato, arial, sans-serif;
-    font-weight 900;
+    font-weight: 900;
     display: inline-block;
     padding: 10px 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-transform: uppercase;
     border-radius: 0;
     border: none;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     font-size: 15px;
     outline: none !important;
     white-space: normal;
@@ -408,6 +413,8 @@ NAVIGATION
     margin: 0;
     background-color: #fff;
     z-index: 10;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 }
 
 .navbar-collapse {
@@ -437,7 +444,8 @@ NAVIGATION
     padding: 10px 20px;
     text-decoration: none;
     color: #000;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 38px;
 }
 
@@ -683,7 +691,9 @@ FORM
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+        -ms-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
     max-width: 900px;
     width: 100%;
     padding: 0 15px;
@@ -692,7 +702,9 @@ FORM
 
 .taller-than-window .modal-dialog {
     top: 0;
-    transform: translate(-50%, 0) !important;
+    -webkit-transform: translate(-50%, 0) !important;
+        -ms-transform: translate(-50%, 0) !important;
+            transform: translate(-50%, 0) !important;
 }
 
 .modal-content {
@@ -732,6 +744,7 @@ FORM
 
 .modal {
     opacity: 0;
+    -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s;
 }
 
