@@ -1,46 +1,23 @@
 /*=====================================
-CSS RESET
-/======================================*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/*=====================================
 FONTS
 /======================================*/
 
 @font-face {
-  font-family: 'CrimsonTextItalic';
-  src: url('../fonts/crimson-text/italic.ttf') format('truetype');
-  font-style: italic;
+    font-family: 'CrimsonTextItalic';
+    src: url('../fonts/crimson-text/italic.ttf') format('truetype');
+    font-style: italic;
 }
 
-@font-face {
-   font-family: 'MotserratLight';
-   src: url('../fonts/motserrat/light.otf') format('opentype');
-}
-
-@font-face {
-   font-family: 'MotserratUltraLight';
-   src: url('../fonts/motserrat/ultra-light.otf') format('opentype');
-   font-weight: 100;
-}
-
-@font-face {
-   font-family: 'MotserratBold';
-   src: url('../fonts/motserrat/bold.otf') format('opentype');
-   font-weight: 900;
-}
 
 /*=====================================
 GENERAL
 /======================================*/
 
 body {
-   font-family: 'MotserratUltraLight', arial, sans-serif;
-   font-size: 14px;
-   position: relative;
+    font-family: lato, arial, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    position: relative;
 }
 
 h1,
@@ -54,90 +31,90 @@ h4 {
 }
 
 h1 {
-   font-family: 'MotserratUltraLight', arial, sans-serif;
+    font-family: lato, arial, sans-serif;
+    font-weight: 100;
     font-size: 36px;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.6em;
     line-height: 1.3;
     margin-bottom: 0.3em;
 }
 
 h1 strong {
-   font-family: 'MotserratBold', arial, sans-serif;
-   font-weight: bold;
+    font-family: lato, arial, sans-serif;
+    font-weight: 600;
 }
 
 h1 .top {
-   display: block;
+    display: block;
     font-size: 0.72em;
-    letter-spacing: 0.92em;
+    letter-spacing: 0.99em;
     margin-bottom: 0.3em;
 }
 
 h2,
 h4 {
-   font-family: 'MotserratBold', arial, sans-serif;
-   margin-bottom: 4em;
-   font-size: 16px;
-   position: relative;
+    font-family: lato, arial, sans-serif;
+    margin-bottom: 4em;
+    font-weight: 900;
+    font-size: 16px;
+    position: relative;
 }
 
 .logo-ux {
-   display: block;
-   background-image: url('../images/logo-ux.png');
-   background-repeat: no-repeat;
-   background-size: 100%;
-   position: absolute;
-   opacity: 0.02;
-   z-index: 0;
-   left: 50%;
-   margin-left: -182px;
-   top: -70px;
-   transition: transform 0.1s;
+    display: block;
+    position: absolute;
+    opacity: 0.04;
+    z-index: 0;
+    left: 50%;
+    margin-left: -182px;
+    top: -70px;
+    transition: transform 0.1s;
 }
 
 h3 {
-   font-family: 'MotserratUltraLight', arial, sans-serif;
-   margin-bottom: 3em;
-   font-size: 16px;
+    font-family: lato, arial, sans-serif;
+    margin-bottom: 3em;
+    font-size: 16px;
+    font-weight: 200;
 }
 
 p {
-   font-size: 1em;
-   margin: 0;
-   padding-bottom: 2em;
+    font-size: 1em;
+    margin: 0;
+    padding-bottom: 2em;
 }
 
 p:last-child {
-   padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 section p {
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 li {
-   font-size: 1em;
-   margin-bottom: 0.5em;
+    font-size: 1em;
+    margin-bottom: 0.5em;
 }
 
 article:nth-of-type(2n) {
-   background-color: #f6f6f6
+    background-color: #f6f6f6
 }
 
 article {
-   overflow: hidden;
-   padding-top: 4em;
+    overflow: hidden;
+    padding-top: 4em;
 }
 
 article:first-of-type {
-   padding-top: 0;
+    padding-top: 0;
 }
 
 article section {
-   margin: 6em 0;
-   position: relative;
+    margin: 6em 0;
+    position: relative;
 }
 
 figure img {
@@ -148,10 +125,10 @@ figure img {
 
 .diagram-process figcaption,
 .portfolio-image figcaption {
-    font-family: 'CrimsonTextItalic', arial, sans-serif;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 1.2;
+    font-family: bookmania, arial, sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .header-text {
@@ -159,10 +136,10 @@ figure img {
 }
 
 .btn {
-   font-family: 'MotserratUltraLight', arial, sans-serif;
+    font-family: lato, arial, sans-serif;
+    font-weight 900;
     display: inline-block;
     padding: 10px 20px;
-    font-weight: bold;
     box-sizing: border-box;
     text-transform: uppercase;
     border-radius: 0;
@@ -180,11 +157,10 @@ figure img {
 }
 
 .btn-outline {
-   border: 1px solid #fff;
-   color: #fff;
-   margin-bottom: 0.9em;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 0.9em;
 }
-
 
 .btn-solid:hover,
 .btn-solid:focus,
@@ -197,124 +173,139 @@ figure img {
 .btn-solid:focus,
 .btn-outline:hover,
 .btn-outline:focus {
-   background-color: rgba(255, 255, 255, 0.8);
-   color: #000;
-   border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-color: transparent;
 }
 
 .diagram {
-   width: 100%;
-   text-align: center;
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
 }
 
+.diagram img {}
+
 .icon-header {
-   text-align: center;
-   font-size: 13px;
-   margin-bottom: 2em;
-   text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 2em;
+    text-transform: uppercase;
 }
 
 .icon-header img {
-   margin-bottom: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 .skills-list {
-   background-color: #f6f6f6;
-   max-width: 250px;
-   margin: 0 auto;
-   padding: 2em 2em 2em 3em;
+    background-color: #f6f6f6;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 2em 2em 2em 3em;
 }
 
 .skills-list li:last-child {
-   margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 article:nth-of-type(2n) .example-work img {
-   border: 10px solid #e6e6e6;
+    border: 10px solid #e6e6e6;
 }
 
 .example-work img {
-   border: 10px solid #f6f6f6;
+    border: 10px solid #f6f6f6;
 }
 
 .social-media a {
-   display: inline-block;
-   margin: 0 5px;
-   width: 30px;
-   opacity: 0.7;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    opacity: 0.7;
 }
 
 .social-media a:hover,
 .social-media a:focus {
-   opacity: 1;
+    opacity: 1;
 }
 
 .example-work {
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
 .example-work small {
-   float:right;
+    float: right;
 }
 
 .example-work:before,
 .example-work:after {
-   content: '';
-   display: table;
-   clear: both;
+    content: '';
+    display: table;
+    clear: both;
 }
 
 .example-work img {
-   width: 100%;
-   margin-bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.status-msg {
+    margin-bottom: 0;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.succes {
+    color: #008000;
 }
 
 .col-sm-6 .example-work {
-   width: 600px;
-   max-width: 100%;
+    width: 600px;
+    max-width: 100%;
 }
 
 .col-sm-4 .example-work {
-   width: 400px;
-   max-width: 100%
+    width: 400px;
+    max-width: 100%
 }
 
 @media (max-width: 767px) {
-   .skills-list {
-      margin-bottom: 2em;
-   }
+    .skills-list {
+        margin-bottom: 2em;
+    }
     h1 {
-      font-size: 24px;
+        font-size: 24px;
     }
     .col-sm-6:nth-child(2) .example-work {
-      float: right;
-   }
-   .col-sm-4 .example-work img {
-          margin-bottom: 0;
-   }
-   .col-sm-4 .example-work {
-          padding-bottom: 10%;
-          margin-bottom: 30px;
-   }
-   .col-sm-4:nth-child(1) .example-work {
-      padding-right: 5%;
-   }
-   .col-sm-4:nth-child(2) .example-work {
-      padding-left: 2.5%;
-      padding-right: 2.5%;
-   }
-   .col-sm-4:nth-child(3) .example-work {
-      padding-left: 5%;
-   }
+        float: right;
+    }
+    .col-sm-4 .example-work img {
+        margin-bottom: 0;
+    }
+    .col-sm-4 .example-work {
+        padding-bottom: 10%;
+        margin-bottom: 30px;
+    }
+    .col-sm-4:nth-child(1) .example-work {
+        padding-right: 5%;
+    }
+    .col-sm-4:nth-child(2) .example-work {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .col-sm-4:nth-child(3) .example-work {
+        padding-left: 5%;
+    }
 }
 
 @media (max-width: 400px) {
     h1 {
-      font-size: 20px;
-      margin-bottom: 
+        font-size: 20px;
+        margin-bottom:
     }
-
 }
+
 
 /*=====================================
 MARQUEE
@@ -326,8 +317,13 @@ MARQUEE
     background-image: url('../images/marquee-ny-city.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 40%;
+    background-position: 50% 0%;
     height: 700px;
+    height: 50vw;
+    max-height: 80vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .header-text {
@@ -338,9 +334,10 @@ MARQUEE
 }
 
 .header-text .btn {
-   font-family: 'MotserratBold', arial, sans-serif;
-   font-size: 15px;
-    letter-spacing: 0.5em;
+    font-family: lato, arial, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.7em;
 }
 
 .buttons-contain {
@@ -349,35 +346,53 @@ MARQUEE
 
 .buttons-contain .btn {
     width: 250px;
+    margin: 0 3px;
 }
 
 @media (min-width: 768px) {
-    .buttons-contain .btn:not(:last-child) {
+    .buttons-contain .btn:not(: last-child) {
         margin-right: 5px;
     }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1600px) {
     .marquee {
-      height: 600px;
-   }
-} 
+        background-position: center top;
+    }
+}
+
+@media (max-width: 1260px) {
+    .marquee {
+        height: 500px;
+    }
+}
+
+@media (max-width: 900px) {
+    .marquee {
+        height: 400px;
+    }
+}
 
 @media (max-width: 767px) {
     .marquee {
-      height: auto;
-   }
-   .buttons-contain .btn {
-      display: block;
-      margin: 0 auto 0.5em;
-   }
+        height: auto;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .buttons-contain .btn {
+        display: block;
+        margin: 0 auto 0.5em;
+    }
+}
 
-} 
 
-   
 /*=====================================
 NAVIGATION
 /======================================*/
+
+.navbar-contain.child-affix {
+    height: 38px;
+}
 
 .navbar.affix {
     position: fixed;
@@ -387,16 +402,17 @@ NAVIGATION
 }
 
 .navbar {
-  border-radius: 0;
-  border: none;
-  min-height: 0;
-  margin: 0;
-  background-color: #fff;
-  z-index:10;
+    border-radius: 0;
+    border: none;
+    min-height: 0;
+    margin: 0;
+    background-color: #fff;
+    z-index: 10;
 }
 
 .navbar-collapse {
-   background-color: #fff;
+    background-color: #fff;    
+    padding: 0;
 }
 
 .navbar ul {
@@ -412,26 +428,42 @@ NAVIGATION
 }
 
 .navbar a {
-   font-family: 'MotserratLight', arial, sans-serif;
-   display: block;
-   font-size: 12px;
-   letter-spacing: 0.5em;
-   text-transform: uppercase;
-   padding: 10px 20px;
-   text-decoration: none;
-   color: #000;
-   box-sizing: border-box;
-   height: 38px;
+    font-family: lato, arial, sans-serif;
+    font-weight: 400;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    height: 38px;
 }
 
 .navbar .active a {
-   font-family: 'MotserratBold', arial, sans-serif;
-   font-weight: bold;
+    font-family: lato, arial, sans-serif;
+    font-weight: 900;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-  color: #000;
+    color: #000;
+}
+
+.navbar .layout-fix {
+    font-weight: 900;
+    visibility: hidden;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a:not(.layout-fix) {
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .hamburger:after {
@@ -445,14 +477,14 @@ NAVIGATION
 }
 
 .hamburger {
-    width: 30px;
-    height: 20px;
+    width: 14px;
+    height: 12px;
     position: absolute;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     text-align: center;
     right: 10px;
-    top: 10px;
+    top: 13px;
     cursor: pointer;
     z-index: 10;
 }
@@ -460,7 +492,7 @@ NAVIGATION
 .hamburger span {
     display: inline-block;
     position: absolute;
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #000;
     opacity: 1;
@@ -515,26 +547,43 @@ NAVIGATION
 }
 
 @media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-   .navbar a:hover,
-   .navbar a:focus {
-       font-family: 'MotserratBold', arial, sans-serif;
-       font-weight: bold;
-   }
+    .hamburger {
+        display: none;
+    }
+    .navbar a:hover,
+    .navbar a:focus {
+        font-family: lato, arial, sans-serif;
+        font-weight: 900;
+    }
 }
-
 
 @media (max-width: 767px) {
     .navbar li {
-      display: block;
+        display: block;        
+        border-bottom: 1px solid #eee;
+    }
+    .navbar a {
+        height: auto;
+        padding: 14px 15px;
     }
     .navbar {
-      height: 40px;
+        height: 40px;
+    }
+    .navbar-collapse {
+        margin-top: 40px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+    }
+    .navbar.affix-top {
+        min-height: 40px;
+        height: auto;
+    }
+    .navbar.affix-top .navbar-collapse {
+        position: relative;
     }
     .example-work {
-      margin-bottom: 2em;
+        margin-bottom: 2em;
     }
 }
 
@@ -544,34 +593,34 @@ ABOUT
 /======================================*/
 
 .portfolio-image {
-   position: relative;
+    position: relative;
 }
 
 .portfolio-image:before {
-   content: '';
-   display: block;
-   position: absolute;
-   top: 125px;
-   border: 1px dashed #ccc;
-   width: 100%;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 125px;
+    border: 1px dashed #ccc;
+    width: 100%;
 }
 
 .portfolio-image figure {
-   position: relative;
-   max-width: 400px;
-   margin: 2em auto 3.8em;
-   text-align: center;
-   background-color: #fff;
+    position: relative;
+    max-width: 400px;
+    margin: 2em auto 3.8em;
+    text-align: center;
+    background-color: #fff;
 }
 
 .portfolio-image img {
-   width: 250px;
+    width: 250px;
 }
 
 .diagram-process {
-   width: 100%;
-   max-width: 458px;
-   margin: 0 auto;
+    width: 100%;
+    max-width: 458px;
+    margin: 0 auto;
 }
 
 
@@ -580,106 +629,122 @@ FOOTER
 /======================================*/
 
 footer {
-   color: #fff;
-   overflow: hidden;
+    color: #fff;
+    overflow: hidden;
 }
 
 footer a,
 footer a:hover,
 footer a:focus {
-   color: #fff;
+    color: #fff;
 }
 
 footer section {
-   padding: 2em 15px 2em 15px;
-   text-align: center;
-   max-width: 320px;
-   margin: 0 auto;
+    padding: 2em 15px 2em 15px;
+    text-align: center;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 footer .col-sm-4 {
-   background-color: #333;
+    background-color: #333;
 }
 
 footer .col-sm-4:nth-child(2) {
-   background-color: #3b3b3b;
+    background-color: #3b3b3b;
 }
 
 @media (min-width: 768px) {
-   footer {
-      overflow: hidden;
-   }
-   footer .col-sm-4 {
-      padding-bottom: 100em;
-      margin-bottom: -96em;
-   }
+    footer {
+        overflow: hidden;
+    }
+    footer .col-sm-4 {
+        padding-bottom: 100em;
+        margin-bottom: -96em;
+    }
 }
+
 
 /*=====================================
 FORM
 /======================================*/
 
 .modal .close {
-   position: absolute;
-   top: 0;
-   right: 10px;
-   color: #000;
-   font-size: 44px;
-   opacity: 1;
-   outline: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #000;
+    font-size: 44px;
+    opacity: 1;
+    outline: none;
 }
+
 .modal-dialog {
-   max-width: 900px;
-   width: 100%;
-   padding: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    max-width: 900px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.taller-than-window .modal-dialog {
+    top: 0;
+    transform: translate(-50%, 0) !important;
 }
 
 .modal-content {
-   border-radius: 0;
-   padding: 2em;
-   background-color: #f4f4f4;
+    border-radius: 0;
+    padding: 2em;
+    background-color: #f4f4f4;
 }
 
 .modal-header {
-   border: none;
+    border: none;
 }
 
 .modal-content textarea {
-   height: 167px;
+    height: 167px;
 }
 
 .form-control {
-   border-radius: 0;
+    border-radius: 0;
 }
 
 .submit-contain {
-   text-align: center;
-   margin-top: 2.5em;
+    text-align: center;
+    margin-top: 2.5em;
 }
 
 .submit-contain .btn {
-   border: none;
-   background-color: #666;
-   color: #fff;
-   padding: 10px 30px;
+    border: none;
+    background-color: #666;
+    color: #fff;
+    padding: 10px 30px;
 }
 
 .submit-contain .btn:hover,
 .submit-contain .btn:focus {
-   background-color: #333;
+    background-color: #333;
 }
 
 .modal {
-   opacity: 0;
-   transition: opacity 0.5s;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .modal.in {
-   opacity: 1;
+    opacity: 1;
+}
+
+label {
+    color: #777;
 }
 
 @media (max-width: 767px) {
-   .modal-content {
-      padding: 1em;
-   }
+    .modal-content {
+        padding: 1em;
+    }
 }
